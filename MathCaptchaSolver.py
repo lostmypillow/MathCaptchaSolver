@@ -41,7 +41,7 @@ class CaptchaSolver:
             return self.math_operation_for_both_signs(left_number, unfixed_right_number)
 
     def solve_captcha(self):
-        positions = {'left': 5, 'right': 60, 'sign': 39, 'negative_sign_right': 56}
+        positions = {'left': 5, 'right': 50, 'sign': 39, 'negative_sign_right': 56}
         dimensions = {'width': 25, 'height': 20, 'width_sign': 15, 'height_sign': 15, 'width_negative_sign': 18}
         
         left_image = self.image[7:27, positions['left']:positions['left']+dimensions['width']]
