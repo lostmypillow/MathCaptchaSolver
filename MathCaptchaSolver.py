@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
-from transformers import pipeline
-
+from transformers import pipeline, logging
+logging.set_verbosity_error()
 pipe = pipeline("image-to-text", model="microsoft/trocr-large-printed")
 
 class CaptchaSolver:
